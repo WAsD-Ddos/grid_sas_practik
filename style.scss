@@ -3,34 +3,51 @@
 //шрифт Pt Sanss
 //@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 body{
-  background-color: #4f4b4b;
+  background-color: rgb(53, 50, 50);
 }
+.conteiner{    
+  max-width: 1000px;
+  margin: 0 auto;
+}
+img{//временно
+  max-width: 100%;
+}
+.wrapper{ 
+  min-height: 100%;
+   .header{
+    margin-bottom: 40px;
+    min-height: 120px;
+    background-color: rgb(102, 60, 60);
+    .menu_body{
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-.translate_glav{
-    margin: 15px;
-    h1{font-size: 20px;color:azure}
-    h2{font-size: 15px;color:azure}
-    .translate:hover{
-        transform: translate(40px);
+       .menu_img{
+        
+        background-color: azure;
+        min-width: 55px;
+        min-height: 50px;
+        border-radius: 50%;
+       }
+       .menu_list{
+
+        display: flex;
+
+ 
+        .menu_href{
+          color: azure;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1.6px;
+
+         padding-left: 50px;
+
+        }
+       }
     }
-    .translate{
-    transition: all 0.8s ease 0s;
-    // transform: translate(-50%,0px);
-    // position: relative;
-    // left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:20px;
-    color:azure;
-    
-
-    
-    margin-top: 30px;
-    width: 150px;
-    height: 150px;
-    background-color: #e88e22;
-
-    
    }
+
+
 }
