@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -77,7 +78,7 @@ body {
 }
 
 .conteiner {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -122,4 +123,188 @@ img {
   text-transform: uppercase;
   letter-spacing: 1.6px;
   padding-left: 50px;
+}
+.wrapper .content .grid .grid_net {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px 30px;
+  -ms-grid-rows: minmax(100px, 500px), minmax(100px, 500px), minmax(100px, 500px), minmax(100px, 450px), minmax(100px, 450px);
+  grid-template-rows: minmax(100px, 500px), minmax(100px, 500px), minmax(100px, 500px), minmax(100px, 450px), minmax(100px, 450px);
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+      grid-template-areas: "menu title title title title" "menu main main main main" "menu main main main main" "menu magazine magazine magazine magazine" "menu magazine magazine magazine magazine";
+}
+.wrapper .content .grid .grid_net .grid_item_menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 1;
+  background-color: rgb(49, 92, 49);
+  grid-area: menu;
+}
+.wrapper .content .grid .grid_net .grid_item_menu .content_grid_menu {
+  padding-left: 20px;
+}
+.wrapper .content .grid .grid_net .grid_item_menu .content_grid_menu .menu_href {
+  padding-top: 20px;
+  color: azure;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+}
+.wrapper .content .grid .grid_net .grid_item_title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-area: title;
+  color: azure;
+}
+.wrapper .content .grid .grid_net .grid_item_title .grid_item_title1 {
+  font-size: 33px;
+  font-weight: 600;
+}
+.wrapper .content .grid .grid_net .grid_item_title .grid_item_title2 {
+  font-size: 27px;
+  font-weight: 600;
+  padding-top: 30px;
+  letter-spacing: 1.5px;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px 10px;
+      grid-template-areas: "main main2" "main3 main4";
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: main;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_2_5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main2;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px 5px;
+  -ms-grid-rows: 1fr 5px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 5px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_2_5 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_2_5 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_2_5 > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_2_5 > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_6_9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main3;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px 5px;
+  -ms-grid-rows: 1fr 5px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 5px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_6_9 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_6_9 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_6_9 > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_6_9 > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.wrapper .content .grid .grid_net .grid_item_gallery .grid_item_gallery_10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: main4;
+}
+.wrapper .content .grid .grid_net .magazine_items {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-area: magazine;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 20px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.wrapper .content .grid .grid_net .magazine_items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.wrapper .content .grid .grid_net .magazine_items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.wrapper .content .grid .grid_net .magazine_items > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.wrapper .content .grid .grid_net .magazine_items > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.wrapper .content .grid .grid_net .magazine_items > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.wrapper .content .grid .grid_net .magazine_items > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.wrapper .content .grid .grid_net .magazine_items .magazine_card P {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: azure;
+  font-family: "Noto Sans";
+  font-size: 20px;
+}
+.wrapper .content .grid .grid_net .magazine_items .magazine_card .card_button {
+  background-color: rgb(140, 80, 40);
+  width: 120px;
+  height: 35px;
+  color: azure;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+.wrapper .content .grid .grid_net .magazine_items .magazine_card .card_button:hover {
+  background-color: rgb(59, 141, 157);
 }
