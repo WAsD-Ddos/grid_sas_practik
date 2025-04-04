@@ -118,11 +118,16 @@ img {
   display: flex;
 }
 .wrapper .header .menu_body .menu_list .menu_href {
+  padding-left: 50px;
+}
+.wrapper .header .menu_body .menu_list .menu_href a {
   color: azure;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.6px;
-  padding-left: 50px;
+}
+.wrapper .content {
+  margin-bottom: 20px;
 }
 .wrapper .content .grid .grid_net {
   display: -ms-grid;
@@ -146,6 +151,8 @@ img {
 }
 .wrapper .content .grid .grid_net .grid_item_menu .content_grid_menu .menu_href {
   padding-top: 20px;
+}
+.wrapper .content .grid .grid_net .grid_item_menu .content_grid_menu .menu_href a {
   color: azure;
   letter-spacing: 1.5px;
   font-size: 16px;
@@ -284,7 +291,7 @@ img {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
-.wrapper .content .grid .grid_net .magazine_items .magazine_card P {
+.wrapper .content .grid .grid_net .magazine_items .magazine_card p {
   padding-top: 20px;
   padding-bottom: 20px;
   color: azure;
@@ -307,4 +314,22 @@ img {
 }
 .wrapper .content .grid .grid_net .magazine_items .magazine_card .card_button:hover {
   background-color: rgb(59, 141, 157);
+}
+.wrapper .footer {
+  background-color: rgb(108, 61, 117);
+}
+.wrapper .footer .footer_items {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: azure;
+  font-family: "Noto Sans";
+  font-size: 14px;
 }

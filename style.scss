@@ -35,16 +35,16 @@ img{//временно
        }
        .menu_list{
 
+        
         display: flex;
 
  
         .menu_href{
-          color: azure;
+          a{color: azure;
           font-size: 14px;
           text-transform: uppercase;
-          letter-spacing: 1.6px;
-
-         padding-left: 50px;
+          letter-spacing: 1.6px;}
+          padding-left: 50px;
 
         }
        }
@@ -52,6 +52,7 @@ img{//временно
    }
 
    .content{
+    margin-bottom: 20px;
     .grid{
       .grid_net{
          
@@ -73,9 +74,10 @@ img{//временно
             padding-left: 20px;
             .menu_href{
               padding-top: 20px;
+              a{
               color: azure;
               letter-spacing: 1.5px;
-              font-size: 16px;
+              font-size: 16px;}
             }
           }
         }
@@ -129,7 +131,8 @@ img{//временно
 
 
         .magazine_card{
-           P{
+          
+           p{
             padding-top: 20px;
             padding-bottom: 20px;
             color: azure;
@@ -165,7 +168,19 @@ img{//временно
 
 
 
+.footer{
+  background-color: rgb(108, 61, 117);
+  .footer_items{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    color: azure;
+    font-family: "Noto Sans";
+    font-size: 14px;
+  }
+}
 
   
 }
